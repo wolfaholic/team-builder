@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState} from 'react';
 import './App.css';
 
+import Forum from './components/Form';
+import Team from './components/Team';
+
 function App() {
+
+  const [member, setMember] = useState([{
+      name: 'Ima Member';
+      email: 'imam@teambuilderreact.com';
+      role: 'full stack developer';
+  }]);
+      
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div className="App"> 
+      <Form setMember={setMember} member={member} />
+
+     </div>
   );
 }
 
