@@ -2,6 +2,46 @@ body {
     background-color: black;
     color: white;
     display: flex;
-    margin: 0, auto;
+    font-family: 'Roboto', serif;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
+form {
+    display: flex;
+    justify-self: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 20px;
+    padding: 20px;
+     
+  }
+
+  input {
+      margin: 20px;
+  }
+
+  label {
+    margin-bottom: -12px;
+    text-align: left;
+    width: 200px;
+  }
+
+  .member-form {
+      
+      border-bottom: 2px solid white;
+  }
+
+  button {
+      background-color: lightblue;
+      margin-bottom: 20px;
+
+  }
